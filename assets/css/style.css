@@ -634,6 +634,10 @@ footer {
         display: none;
     }
 
+    .scroll-icon-box {
+        margin-top: -6em;
+    }
+
     .nav-menu.responsive {
         left: 0;
     }

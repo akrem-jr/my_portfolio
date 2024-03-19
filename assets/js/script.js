@@ -1,13 +1,13 @@
 /* ----- NAVIGATION BAR FUNCTION ----- */
     function myMenuFunction(){
       var menuBtn = document.getElementById("myNavMenu");
-
       if(menuBtn.className === "nav-menu"){
         menuBtn.className += " responsive";
       } else {
         menuBtn.className = "nav-menu";
       }
     }
+
 
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
     window.onscroll = function() {headerShadow()};
@@ -33,7 +33,7 @@
 
 /* ----- TYPING EFFECT ----- */
    var typingEffect = new Typed(".typedText",{
-      strings : ["Designer","Youtuber","Developer"],
+      strings : [" Full Stack Developer"," Designer"],
       loop : true,
       typeSpeed : 100, 
       backSpeed : 80,
@@ -116,16 +116,17 @@
 
   window.addEventListener('scroll', scrollActive)
   // FORM ACTION 
- document.getElementById('contactForm').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent form submission
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
 
-        // Construct email body
-        const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+          document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
 
-        // Open default email client with pre-filled information
-        window.location.href =
-            `mailto:abdulbasetadem@gmail.com?subject=New message from website&body=${encodeURIComponent(body)}`;
-    });
+            // Construct email body
+            const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+
+            // Open default email client with pre-filled information
+            window.location.href =
+                `mailto:abdulbasetadem@gmail.com?subject=New message from website&body=${encodeURIComponent(body)}`;
+        });
