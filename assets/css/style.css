@@ -621,6 +621,7 @@ footer {
         padding: 0;
     }
 
+
     .image,
     .image img {
         width: 320px;
@@ -633,6 +634,8 @@ footer {
     .nav-button {
         display: none;
     }
+
+
 
     .scroll-icon-box {
         margin-top: -6em;
@@ -745,4 +748,129 @@ footer {
     .input-field {
         width: 100%;
     }
+}
+
+/* DARK MODE  */
+
+:root {
+    --background-color: #ffffff;
+    /* Light mode background color */
+    --text-color: #000000;
+    /* Light mode text color */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+
+}
+
+
+
+/* Desktop Mode */
+@media only screen and (min-width: 768px) {
+    .the-sun {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        left: 25px;
+        z-index: 9999;
+        /* Adjust z-index as needed */
+    }
+}
+
+/* Mobile Mode */
+@media only screen and (max-width: 767px) {
+    .the-sun {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        position: fixed;
+        bottom: 25px;
+        right: 5px;
+        z-index: 9999;
+        /* Adjust z-index as needed */
+    }
+}
+
+
+.dark-mode {
+
+    --background-color: #202124;
+    /* Dark mode background color */
+    --text-color: #ffffff;
+
+
+    /* Dark mode text color */
+    nav,
+    footer {
+        background: var(--background-color);
+    }
+
+    .nav-logo span {
+        color: var(--body-color);
+    }
+
+    .nav-link {
+        color: var(--body-color);
+
+    }
+
+    .featured-name p {
+        color: var(--body-color);
+    }
+
+    .featured-text-info p {
+        color: var(--body-color);
+    }
+
+    .icon {
+        background: var(--body-color);
+    }
+
+    .icon:hover {
+        background: var(--text-color-third);
+        color: #f1f1f1;
+    }
+
+    .icon:hover a {
+        color: var(--body-color);
+
+    }
+
+    h1,
+    h3 {
+        color: var(--body-color);
+    }
+
+    .about-info h3 {
+        color: var(--text-color-second);
+    }
+
+    .top-header span {
+        color: var(--body-color);
+    }
+
+    .footer_menu_list a {
+        color: var(--text-color-third);
+    }
+
+    .bottom-footer p a {
+        color: var(--text-color-third);
+    }
+
 }
