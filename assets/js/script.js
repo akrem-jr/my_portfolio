@@ -130,3 +130,11 @@
             window.location.href =
                 `mailto:abdulbasetadem@gmail.com?subject=New message from website&body=${encodeURIComponent(body)}`;
         });
+// dark mode
+
+const togglebutton = document.getElementById("toggle-mode");
+const body = document.body;
+
+togglebutton.addEventListener('click',()=>{
+  body.classList.toggle('dark-mode');
+});
